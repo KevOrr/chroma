@@ -1,0 +1,4 @@
+venv/
+push.bat
+push.sh
+*.pyc
