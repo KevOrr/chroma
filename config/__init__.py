@@ -11,6 +11,7 @@ def config(debug=False):
 class _Config():
     jq_url = 'http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js'
     d3_url = 'http://d3js.org/d3.v3.min.js'
+    connector_map_image_url = '/static/maps/connector.png'
 
 class _DebugConfig(_Config):
     pass

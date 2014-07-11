@@ -1,5 +1,5 @@
 var width = 960,
-    height = 500;
+    height = 540;
 
 // PW = #ccccff
 // OR = #ff4500
@@ -15,7 +15,8 @@ var force = d3.layout.force()
 
 var svg = d3.select('div#map').append('svg')
     .attr('width', width)
-    .attr('height', height);
+    .attr('height', height)
+    .style('align', 'center');
 
 d3.json('/static/maps/connector.json', function(error, chroma) {
     force.nodes(chroma.territories)
