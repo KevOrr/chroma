@@ -32,5 +32,5 @@ def _main_redirect_1():
     return flask.redirect(url_for('main'))
 
 if __name__ == '__main__':
-    app.run(debug=debug)
+    app.run(debug=True)
     
