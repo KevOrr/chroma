@@ -1,4 +1,4 @@
-var width = 960,
+var width = 800,
     height = 540;
 
 // PW = #ccccff

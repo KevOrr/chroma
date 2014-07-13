@@ -1,0 +1,14 @@
+﻿#map {
+    border: 1px solid #777;
+    border-radius: 7px;
+}
+
+.territory {
+    stroke: #ccc;
+    stroke-width: 1.5px;
+}
+
+.connection {
+    stroke: #888;
+    stroke-opacity: .7;
+}

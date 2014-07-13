@@ -2,25 +2,11 @@
 <html>
     <head>
         <title>Chroma Connector Map</title>
+        <link rel="icon" type="image/ico" href="/favicon.ico" />
         <link rel="image_src" type="image/png" href="{{image_url|safe}}" />
         <meta property="og:image" content="{{image_url|safe}}" />
         <meta property="og:title" content="Introspective Self-Aware Amoebic Chroma Connections Map" />
-        <style type="text/css">
-            svg {
-                border: 1px solid #777;
-                border-radius: 7px;
-            }
-            
-            .territory {
-                stroke: #ccc;
-                stroke-width: 1.5px;
-            }
-
-            .connection {
-                stroke: #888;
-                stroke-opacity: .7;
-            }
-        </style>
+        <link rel="stylesheet" type="text/css" href="/static/maps/connector.css" />
         <script src="{{jq_url}}" type="text/javascript"></script>
         <script src="{{d3_url}}" type="text/javascript"></script>
     </head>
