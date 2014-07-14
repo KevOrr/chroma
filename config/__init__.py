@@ -12,10 +12,10 @@ class _Config():
     connector_map_image_url = '/static/maps/connector.png'
 
 class _DebugConfig(_Config):
-    jq_url = '/lib/jquery/jquery-1.11.1.js'
-    d3_url = '/lib/d3/d3.js'
-    qtip_js_url = '/lib/qtip/jquery.qtip.js'
-    qtip_css_url = '/lib/qtip/jquery.qtip.css'
+    jq_url = '/static/lib/jquery/jquery-1.11.1.js'
+    d3_url = '/static/lib/d3/d3.js'
+    qtip_js_url = '/static/lib/qtip/jquery.qtip.js'
+    qtip_css_url = '/static/lib/qtip/jquery.qtip.css'
 
 class _ProductionConfig(_Config):
     jq_url = 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'

@@ -1,7 +1,7 @@
 var width = 800,
     height = 540;
 
-// PW = #ccccff
+// PW = #ccccff FERT FERT FERT FERT FERT FERT FERT FERT FERT FERT FERT
 // OR = #ff4500
 var color = ['rgb(148, 148, 255)',
              'rgb(32, 32, 32)',
@@ -29,6 +29,7 @@ d3.json('/static/maps/connector.json', function(error, chroma) {
         .attr('class', 'connection');
 
     var territories = svg.selectAll('.territory')
+        .attr('width', 'inherit')
         .data(chroma.territories)
         .enter()
         .append('circle')
@@ -57,4 +58,21 @@ function byAffiliation() {
 function byContinent() {
     svg.selectAll('.territory')
        .style('fill', function(d) { return color[d.continent]; });
+}
+
+function logPositions() {
+    positions = [];
+    svg.selectAll('.territory').each(function(d) {
+        positions.push(
+            {
+                name: d.name,
+                url: d.url,
+                continent: d.continent,
+                affiliation: d.affiliation,
+                x: Math.round(d.x),
+                y: Math.round(d.y)
+            }
+        );
+    });
+    console.log(JSON.stringify(positions, null, 4));
 }
