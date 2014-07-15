@@ -1,6 +1,8 @@
 ﻿#map {
     border: 1px solid #777;
     border-radius: 7px;
+	width: 800px;
+	height: 540px;
 }
 
 .territory {
