@@ -2,6 +2,9 @@
 <html>
     <head>
         <title>Home | Periwinkle.fert</title>
+		{% if production %}
+		<script src="{{ga_setup_url}}" type="text/javascript"></script>
+		{% endif %}
     </head>
     <body>
         <h1>Links</h1>

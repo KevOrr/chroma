@@ -23,15 +23,16 @@ app = Flask('__name__')
 
 @app.route('/')
 def main():
-    return app.send_static_file('index.html')
+    return make_html_resp(render_template('index.html',
+        production = production, ga_setup_url = c.ga_setup_url))
 
 @app.route('/maps/connector')
 def connector_map():
     image_url = get_absolute_url(c.connector_map_image_url)
     return make_html_resp(render_template('maps/connector.html',
-                        jq_url=c.jq_url, d3_url=c.d3_url, d3_css_url=c.qtip_css_url,
-                        image_url = image_url, ga_setup_url=c.ga_setup_url,
-                        debug = debug, production=production))
+        jq_url = c.jq_url, d3_url = c.d3_url, d3_css_url = c.qtip_css_url,
+        image_url = image_url, ga_setup_url = c.ga_setup_url,
+        debug = debug, production = production))
 
 ##########################
 # REDIRECTS / REFERENCES #
