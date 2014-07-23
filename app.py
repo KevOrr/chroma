@@ -1,4 +1,4 @@
-import os.path, sys
+import os, os.path, sys
 from urllib.parse import urlparse, urlunsplit
 
 import flask
@@ -12,6 +12,12 @@ if len(sys.argv) == 2 and sys.argv[1] == 'debug':
 else:
     debug = False
 
+production = 'DYNO' in os.environ
+
+if production and debug:
+    e = RuntimeError('Cannot run in debug mode in production environment')
+    raise e
+
 c = config.config(debug)
 app = Flask('__name__')
 
@@ -24,7 +30,8 @@ def connector_map():
     image_url = get_absolute_url(c.connector_map_image_url)
     return make_html_resp(render_template('maps/connector.html',
                         jq_url=c.jq_url, d3_url=c.d3_url, d3_css_url=c.qtip_css_url,
-                        image_url = image_url, debug = debug))
+                        image_url = image_url, ga_setup_url=c.ga_setup_url,
+                        debug = debug, production=production))
 
 ##########################
 # REDIRECTS / REFERENCES #

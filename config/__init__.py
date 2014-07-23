@@ -10,6 +10,7 @@ def config(debug=False):
 
 class _Config():
     connector_map_image_url = '/static/maps/connector.png'
+    ga_setup_url = '/static/ga_setup.js'
 
 class _DebugConfig(_Config):
     jq_url = '/static/lib/jquery/jquery-1.11.1.js'

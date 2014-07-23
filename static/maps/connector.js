@@ -1,7 +1,7 @@
 var width = 800,
     height = 540;
 
-// PW = #ccccff FERT FERT FERT FERT FERT FERT FERT FERT FERT FERT FERT
+// PW = #9494ff FERT FERT FERT FERT FERT FERT FERT FERT FERT FERT FERT
 // OR = #ff4500
 var color = ['rgb(148, 148, 255)',
              'rgb(32, 32, 32)',
