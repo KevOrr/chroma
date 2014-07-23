@@ -19,7 +19,7 @@ class _DebugConfig(_Config):
     qtip_css_url = '/static/lib/qtip/jquery.qtip.css'
 
 class _ProductionConfig(_Config):
-    jq_url = 'http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'
-    d3_url = 'http://d3js.org/d3.v3.min.js'
-    qtip_js_url = 'http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/basic/jquery.qtip.min.js'
-    qtip_css_url = 'http://cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/basic/jquery.qtip.min.css'
+    jq_url = '//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'
+    d3_url = '//d3js.org/d3.v3.min.js'
+    qtip_js_url = '//cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/basic/jquery.qtip.min.js'
+    qtip_css_url = '//cdnjs.cloudflare.com/ajax/libs/qtip2/2.2.0/basic/jquery.qtip.min.css'
