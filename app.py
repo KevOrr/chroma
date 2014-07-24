@@ -52,7 +52,7 @@ def get_absolute_url(relative):
 
 @app.route('/google43467aa7281da596.html')
 def gwebmaster_verification():
-    return make_html_resp(app.send_static_file('/static/google43467aa7281da596.html'))
+    return make_html_resp(app.send_static_file('google43467aa7281da596.html'))
 
 if __name__ == '__main__':
     app.run(debug=debug)
