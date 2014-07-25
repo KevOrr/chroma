@@ -4,12 +4,8 @@ Jinja2==2.7.3
 MarkupSafe==0.23
 Werkzeug==0.9.6
 beautifulsoup4==4.3.2
-distribute==0.6.49
 itsdangerous==0.24
 praw==2.1.17
-pyquery==1.2.8
-redis==2.10.1
 requests==2.3.0
 six==1.7.3
 update-checker==0.10
-virtualenv==1.10.1
