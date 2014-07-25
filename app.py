@@ -3,6 +3,7 @@ from urllib.parse import urlparse, urlunsplit
 
 import flask
 from flask import Flask, render_template, request, url_for
+import flask.ext.compress
 
 import config
 from util import *
@@ -20,6 +21,8 @@ if production and debug:
 
 c = config.config(debug)
 app = Flask('__name__')
+flask.ext.compress.Compress(app)
+
 
 @app.route('/')
 def main():
@@ -55,5 +58,5 @@ def gwebmaster_verification():
     return make_html_resp(app.send_static_file('google43467aa7281da596.html'))
 
 if __name__ == '__main__':
-    app.run(debug=debug)
+    app.run('0.0.0.0', debug=debug)
     
