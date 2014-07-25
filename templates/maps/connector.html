@@ -7,12 +7,8 @@
         <meta property="og:image" content="{{image_url|safe}}" />
         <meta property="og:title" content="Introspective Self-Aware Amoebic Chroma Connections Map" />
         <meta name=viewport content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" type="text/css" href="{{qtip_css_url}}" />
         <link rel="stylesheet" type="text/css" href="/static/maps/connector.css" />
         <script src="{{jq_url}}" type="text/javascript"></script>
-        {% if production %}
-        <script src="{{ga_setup_url}}" type="text/javascript"></script>
-        {% endif %}
     </head>
     <body>
         <h1>Introspective Self-Aware Amoebic Chroma Connections Map (ISAAC C.M.)</h1>
@@ -23,7 +19,11 @@
         {% if debug %}
         <input type="button" onclick="logPositions();" value="console.log all current positions" />
         {% endif %}
+        <link rel="stylesheet" type="text/css" href="{{qtip_css_url}}" />
         <script src="{{d3_url}}" type="text/javascript"></script>
         <script src="/static/maps/connector.js" type="text/javascript"></script>
+        {% if production %}
+        <script src="{{ga_setup_url}}" type="text/javascript"></script>
+        {% endif %}
     </body>
 </html>
