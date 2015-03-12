@@ -1,3 +1,5 @@
+var CHROMA_TERRITORIES_URL = 'http://faceless-games.com/chromabot/report.json';
+
 var width = 800,
     height = 540;
 
@@ -18,37 +20,45 @@ var svg = d3.select('div#map').append('svg')
     .attr('height', height)
     .style('align', 'center');
 
-d3.json('/static/maps/connector.json', function(error, chroma) {
-    force.nodes(chroma.territories)
-         .links(chroma.connections)
-         .start();
+function bothLoaded(request1, request2, callback) {
+    return request1.done(function(data1){
+        return request2.done(function(data2){
+            return callback(data1, data2);
+        });
+    });
+}
 
+function startD3(chromaConfig, territoryStates) {
+    force.nodes(territoryData.territories)
+         .links(connectionConfig.connections)
+         .start();
+    
     var connections = svg.selectAll('.connection')
-        .data(chroma.connections)
+        .data(connections)
         .enter().append('line')
         .attr('class', 'connection');
-
+    
     var territories = svg.selectAll('.territory')
         .attr('width', 'inherit')
-        .data(chroma.territories)
+        .data(territories)
         .enter()
         .append('circle')
         .attr('class', 'territory')
         .attr('r', 8)
         .style('fill', function(d) { return color[d.affiliation]; })
         .call(force.drag);
-
+    
     territories.append('title').text(function(d) { return d.name; });
     force.on('tick', function() {
         connections.attr('x1', function(d) { return d.source.x; })
                    .attr('y1', function(d) { return d.source.y; })
                    .attr('x2', function(d) { return d.target.x; })
                    .attr('y2', function(d) { return d.target.y; });
-
+    
         territories.attr('cx', function(d) { return d.x; })
                    .attr('cy', function(d) { return d.y; });
     });
-});
+}
 
 function byAffiliation() {
     svg.selectAll('.territory')
@@ -76,3 +86,7 @@ function logPositions() {
     });
     console.log(JSON.stringify(positions, null, 4));
 }
+
+$.ajax({
+    url: CHROMA_TERRITORIES_URL
+}).done(startD3);

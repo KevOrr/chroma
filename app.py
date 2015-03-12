@@ -30,7 +30,7 @@ def main():
 @app.route('/maps/connector')
 def connector_map():
     image_url = get_absolute_url(c.connector_map_image_url)
-    return make_html_resp(render_template('maps/connector.html',
+    return make_html_resp(render_template('maps/s2/connector.html',
         jq_url = c.jq_url, d3_url = c.d3_url, d3_css_url = c.qtip_css_url,
         image_url = image_url, ga_setup_url = c.ga_setup_url,
         debug = debug, heroku = heroku))
@@ -53,7 +53,7 @@ def gwebmaster_verification():
 
 if __name__ == '__main__':
     if debug:
-        app.run('127.0.0.1', True)
+        app.run('127.0.0.1', debug=True)
     else:
-        app.run('0.0.0.0', False)
+        app.run('0.0.0.0', debug=False)
     

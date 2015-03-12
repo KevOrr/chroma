@@ -1,0 +1,130 @@
+{'aegis_imperial':
+    {'battle': 'none',
+    'name': 'aegis',
+    'owner': 0,
+    'srname': 'aegis_imperial'},
+ 'amethystcove':
+    {'battle': 'none',
+     'name': 'amethyst cove',
+     'owner': 1,
+     'srname': 'amethystcove'},
+ 'areusantris':
+    {'battle': 'none',
+     'name': 'areus antris',
+     'owner': 0,
+     'srname': 'areusantris'},
+ 'chromehenge':
+    {'battle': 'none',
+     'name': 'chromehenge',
+     'owner': 1,
+     'srname': 'chromehenge'},
+ 'cote_dazur':
+    {'battle': 'none',
+     'name': "cote d'azur",
+     'owner': 1,
+     'srname': 'cote_dazur'},
+ 'fortiris':
+    {'battle': 'none',
+     'name': 'fort iris',
+     'owner': 1,
+     'srname': 'fortiris'},
+ 'greataurantiaco':
+    {'battle': 'none',
+     'name': 'great aurantiaco',
+     'owner': 1,
+     'srname': 'greataurantiaco'},
+ 'islandofwarriors':
+    {'battle': 'none',
+     'name': 'island of warriors',
+     'owner': 1,
+     'srname': 'islandofwarriors'},
+ 'kyanitecove'
+    {'battle': 'none',
+     'name': 'kyanite cove',
+     'owner': 1,
+     'srname': 'kyanitecove'},
+ 'metropolisdaja'
+    {'battle': 'none',
+     'name': 'metropolis daja',
+     'owner': 1,
+     'srname': 'metropolisdaja'},
+ 'midnightmarsh'
+    {'battle': 'none',
+     'name': 'midnight marsh',
+     'owner': -1,
+     'srname': 'midnightmarsh'},
+ 'newcerulean'
+    {'battle': 'none',
+     'name': 'new cerulean',
+     'owner': 1,
+     'srname': 'newcerulean'},
+ 'nordwalder'
+    {'battle': 'none',
+     'name': 'nordwalder',
+     'owner': 0,
+     'srname': 'nordwalder'},
+ 'novumpersarum'
+    {'battle': 'none',
+     'name': 'novum persarum',
+     'owner': 0,
+     'srname': 'novumpersarum'},
+ 'oraistedearg'
+    {'battle': 'none',
+     'name': 'oraistedearg',
+     'owner': 0,
+     'srname': 'oraistedearg'},
+ 'orangelondo'
+    {'battle': 'none',
+     'name': 'orange londo',
+     'owner': 0,
+     'srname': 'orangelondo'},
+ 'pasto_range'
+    {'battle': 'none',
+     'name': 'pasto range',
+     'owner': 0,
+     'srname': 'pasto_range'},
+ 'periwin_grove'
+    {'battle': 'none',
+     'name': 'periwin grove',
+     'owner': 1,
+     'srname': 'periwin_grove'},
+ 'pervinca'
+    {'battle': 'none',
+     'name': 'pervinca',
+     'owner': 1,
+     'srname': 'pervinca'},
+ 'raiderspinnacle'
+    {'battle': 'none',
+     'name': "raider's pinnacle",
+     'owner': 1,
+     'srname': 'raiderspinnacle'},
+ 'republicofbezold'
+    {'battle': 'none',
+     'name': 'republic of bezold',
+     'owner': 1,
+     'srname': 'republicofbezold'},
+ 'sapphiredistrict'
+    {'battle': 'none',
+     'name': 'sapphire district',
+     'owner': 1,
+     'srname': 'sapphiredistrict'},
+ 'snooland'
+    {'battle': 'none',
+     'name': 'snooland',
+     'owner': 1,
+     'srname': 'snooland'},
+ 'tentorahogo'
+    {'battle': 'none',
+     'name': 'tentorahogo',
+     'owner': 0,
+     'srname': 'tentorahogo'},
+ 'turquoisemoors'
+    {'battle': 'none',
+     'name': 'turquoise moors',
+     'owner': 1,
+     'srname': 'turquoisemoors'},
+ 'viperspeak'
+    {'battle': 'none',
+     'name': "viper's peak",
+     'owner': 1,
+     'srname': 'viperspeak'}}

@@ -1,6 +1,4 @@
-﻿from util import _Container
-
-__all__ = ['config']
+﻿__all__ = ['config']
 
 def config(debug=False):
     if debug is True:
@@ -9,7 +7,7 @@ def config(debug=False):
         return _ProductionConfig()
 
 class _Config():
-    connector_map_image_url = '/static/maps/connector.png'
+    connector_map_image_url = '/static/maps/s2/connector.png'
     ga_setup_url = '/static/ga_setup.js'
 
 class _DebugConfig(_Config):
