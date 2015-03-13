@@ -8,6 +8,7 @@ def config(debug=False):
 
 class _Config():
     connector_map_image_url = '/static/maps/s2/connector.png'
+    current_status_url = 'http://faceless-games.com/chromabot/report.json'
     ga_setup_url = '/static/ga_setup.js'
 
 class _DebugConfig(_Config):
